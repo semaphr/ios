@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Semaphr"
-  spec.version      = "1.1.1"
+  spec.version      = "1.1.2"
   spec.summary      = "Semaphr is a kill switch and notification library for your mobile apps."
 
   spec.description  = <<-DESC

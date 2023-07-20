@@ -23,7 +23,7 @@
 
 ### SPM integration
 
-To integrate the SDK using SPM, add the latest version of the iOS SDK by copy-pasting the (repo link https://github.com/semaphr/iOS)[https://github.com/semaphr/iOS] in the package search field in Xcode, and adding the module.
+To integrate the SDK using SPM, add the latest version of the iOS SDK by copy-pasting the repo link [https://github.com/semaphr/iOS](https://github.com/semaphr/iOS) in the package search field in Xcode, and adding the module.
 
 <br />
 

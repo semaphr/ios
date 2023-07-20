@@ -45,6 +45,7 @@ class SemaphrMessageViewController: UIViewController {
         
         let closeImage = UIImage.frameworkImage(named: "close.png")
         closeButton.setImage(closeImage, for: .normal)
+        messageTextView.linkTextAttributes = [.foregroundColor: UIColor.systemBlue]
 
         populate()
     }

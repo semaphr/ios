@@ -32,6 +32,10 @@ class SemaphrManager {
                                                selector: #selector(applicationDidBecomeActive),
                                                name: UIApplication.didBecomeActiveNotification,
                                                object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(applicationWillResignActive),
+                                               name: UIApplication.willResignActiveNotification,
+                                               object: nil)
     }
     
     func end() {
@@ -46,6 +50,11 @@ class SemaphrManager {
 
     @objc func applicationDidBecomeActive() {
         getCurrentStatus()
+    }
+
+    @objc func applicationWillResignActive() {
+        currentlyDisplayedViewController?.removeShownWindow()
+        currentlyDisplayedViewController = nil
     }
     
     // MARK: Private methods

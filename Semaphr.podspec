@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Semaphr"
-  spec.version      = "1.1.0"
+  spec.version      = "1.1.1"
   spec.summary      = "Semaphr is a kill switch and notification library for your mobile apps."
 
   spec.description  = <<-DESC
@@ -28,11 +28,11 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   spec.author             = { "Semaphr" => "info@semaphr.com" }
-  spec.social_media_url   = "https://twitter.com/semaphr_"
+  # spec.social_media_url   = "https://twitter.com/semaphr_"
 
   spec.platform     = :ios
-  spec.ios.deployment_target = "15.0"
-   spec.swift_version = '5.0'
+  spec.ios.deployment_target = "13.0"
+  spec.swift_version = '5.0'
 
   spec.source       = { :git => "https://github.com/semaphr/iOS.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources/**/*.{h,m,swift,xib}"

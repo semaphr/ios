@@ -51,7 +51,12 @@ extension UIViewController {
             }
             
             xxx_window = UIWindow(windowScene: scene)
-            rootWindow = scene.keyWindow
+            if #available(iOS 15.0, *) {
+                rootWindow = scene.keyWindow
+            } else {
+                // Fallback on earlier versions
+                rootWindow = scene.windows.filter {$0.isKeyWindow}.first
+            }
         } else {
             // Fallback on earlier versions
             xxx_window = UIWindow(frame: UIScreen.main.bounds)

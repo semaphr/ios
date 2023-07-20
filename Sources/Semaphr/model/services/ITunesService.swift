@@ -38,9 +38,9 @@ class ITunesService: BaseService {
                     }
                 }
             }
+
+            // Failed case
+            completion(nil)
         }
-        
-        // Failed case
-        completion(nil)
     }
 }
